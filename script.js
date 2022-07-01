@@ -4,8 +4,7 @@ function FusoHorario() {
     var horaBrasil = Number(inHoraBrasil.value);
 
     if (inHoraBrasil == "" || isNaN(horaBrasil)) {
-        alert("Informe a hora do Brasil Corretamente");
-        inHoraBrasil.focus();
+        outHoraFranca.textContent = "Digite um hora válida no formato h.m";
         return;
     }
     var horaFranca = horaBrasil + 5;
